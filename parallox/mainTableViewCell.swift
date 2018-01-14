@@ -80,18 +80,16 @@ class mainTableViewCell: UITableViewCell {
         addConstraint(imageHeightConstraint)
         
         
+        //let wid = NSLayoutConstraint.init(item: favoritesImageView, attribute: NSLayoutAttribute.width, relatedBy: NSLayoutRelation.equal, toItem: nil, attribute: NSLayoutAttribute.notAnAttribute, multiplier: 1.0, constant: 50.0)
         
+         //favoritesImageView.addConstraint(wid)
         
-       // let wid = NSLayoutConstraint.init(item: favoritesImageView, attribute: NSLayoutAttribute.width, relatedBy: NSLayoutRelation.equal, toItem: nil, attribute: NSLayoutAttribute.notAnAttribute, multiplier: 1.0, constant: 50.0)
+       // let centerX = NSLayoutConstraint.init(item: favoritesImageView, attribute: NSLayoutAttribute.centerX, relatedBy: NSLayoutRelation.equal, toItem: self.contentView, attribute: NSLayoutAttribute.centerX, multiplier: 1.0, constant: 0)
         
-       //  favoritesImageView.addConstraint(wid)
-        
-    //    let centerX = NSLayoutConstraint.init(item: favoritesImageView, attribute: NSLayoutAttribute.centerX, relatedBy: NSLayoutRelation.equal, toItem: self.contentView, attribute: NSLayoutAttribute.centerX, multiplier: 1.0, constant: 0)
-        
-       //  self.contentView.addConstraint(centerX)
+      //   self.contentView.addConstraint(centerX)
         [favoritesImageView.centerXAnchor.constraint(equalTo: self.contentView.centerXAnchor),
           favoritesImageView.widthAnchor.constraint(equalTo: self.contentView.widthAnchor)]
-          //  .forEach{$0.isActive = true}
+           .forEach{$0.isActive = true}
     }
     
     
